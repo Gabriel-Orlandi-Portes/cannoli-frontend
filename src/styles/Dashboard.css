@@ -1,0 +1,147 @@
+.dashboard-layout {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background: var(--bg-main);
+  min-height: 100vh;
+}
+
+.dashboard-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.top-kpis {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-bottom: 30px;
+}
+
+.kpi-card-compact {
+  background: var(--bg-card);
+  padding: 16px;
+  border-radius: 12px;
+  color: var(--text);
+  box-shadow: 0 6px 18px rgba(2, 6, 23, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.kpi-card-compact strong {
+  font-size: 1.3rem;
+  color: var(--primary);
+}
+
+.full-width-chart {
+  background: var(--bg-card);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 18px rgba(2, 6, 23, 0.1);
+}
+
+@media (max-width: 900px) {
+  .top-kpis {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .top-kpis {
+    grid-template-columns: 1fr;
+  }
+}
+
+.dashboard-title {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.ranking-section {
+  background: var(--bg-card);
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(2, 6, 23, 0.12);
+}
+
+.ranking-section h3 {
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.ranking-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ranking-section li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding: 8px 0;
+  color: #fff;
+  font-size: 15px;
+}
+
+.loading, .error {
+  text-align: center;
+  color: #fff;
+  margin-top: 100px;
+}
+
+.dashboard-wrapper {
+  display: flex;
+  background: #0b0d13;
+  min-height: 100vh;
+}
+
+.dashboard-main {
+  margin-left: 230px;
+  padding: 30px;
+  color: #fff;
+  width: 100%;
+}
+
+.dashboard-main header {
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: #161a23;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h4 {
+  color: #aaa;
+  font-weight: 500;
+}
+
+.card strong {
+  font-size: 20px;
+  color: #00e676;
+}
+
+.chart-area {
+  margin-top: 40px;
+  background: #161a23;
+  border-radius: 16px;
+  padding: 20px;
+}
+  

@@ -1,0 +1,110 @@
+.simulador-container {
+  padding: 30px;
+  margin-left: 240px;
+  min-height: 100vh;
+  background: #0e1117;
+  color: #fff;
+}
+
+/* TÍTULOS */
+.simulador-title {
+  font-size: 26px;
+  font-weight: 600;
+  color: #7cfcb8;
+  margin-bottom: 8px;
+}
+
+.simulador-subtitle {
+  color: #aaa;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+/* CONFIG BOX */
+.simulador-box {
+  background: #151a22;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.simulador-box label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #cfcfcf;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.simulador-box input,
+.simulador-box select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: #0e1117;
+  color: #fff;
+}
+
+.simular-btn {
+  background: #00e676;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  margin-top: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.2s;
+}
+
+.simular-btn:hover {
+  background: #14ff8d;
+}
+
+/* KPI GRID */
+.simulador-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.simulador-kpi {
+  background: #151a22;
+  padding: 18px;
+  border-radius: 10px;
+  text-align: center;
+  border-left: 4px solid #00e676;
+}
+
+.simulador-kpi h3 {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 6px;
+}
+
+.simulador-kpi p {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* GRÁFICO */
+.simulador-chart {
+  background: #151a22;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+/* INSIGHT */
+.simulador-insight {
+  background: rgba(0,255,150,0.09);
+  border-left: 6px solid #00ff9f;
+  padding: 16px;
+  border-radius: 10px;
+  font-size: 15px;
+  line-height: 22px;
+}
