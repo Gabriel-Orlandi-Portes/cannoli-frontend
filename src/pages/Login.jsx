@@ -14,11 +14,11 @@ export default function Login() {
     if (email === "admin@gmail.com" && password === "admin123") {
       localStorage.setItem("role", "admin");
       localStorage.setItem("name", "Administrador Cannoli");
-      window.location.href = "/admin";
+      window.location.href = "/cannoli-frontend/admin";
     } else if (email === "cliente@gmail.com" && password === "cliente123") {
       localStorage.setItem("role", "cliente");
       localStorage.setItem("name", "Cliente Cannoli");
-      window.location.href = "/cliente";
+      window.location.href = "/cannoli-frontend/cliente";
     } else {
       setError("Usuário ou senha incorretos. Tente novamente.");
     }
